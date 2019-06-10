@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Darshan</string>
+
+    <string name="description_1">One of the leaders in this Segments</string>
+    <string name="description_2">Escorted lakhs of travelers to various destinations around the Pilgrims</string>
+    <string name="description_3">Escorted Group Tours, Customised Holidays, Holidays of India and Incentive Travel</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_dash">DashActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iniesta.darshan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.HotelActivity"></activity>
+        <activity android:name=".Activities.CabActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.SignInActivity"/>
+        <activity android:name=".Activities.PoojaActivity"/>
+        <activity
+            android:name=".Activities.HelpActivity"
+            android:label="@string/title_activity_help" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".Activities.DashActivity"
+            android:label="@string/title_activity_dash" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".Activities.SliderScreenActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

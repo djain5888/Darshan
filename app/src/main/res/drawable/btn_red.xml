@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="20dp" />
+    <padding
+
+        android:bottom="2dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="2dp"/>
+
+    <stroke
+    android:width="@dimen/cardview_compat_inset_shadow"
+        android:dashWidth="@dimen/cardview_default_elevation"
+        />
+
+
+    <gradient
+        android:startColor="@color/red_400"
+        android:endColor="@color/red_400"/>
+</shape>
