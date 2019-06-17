@@ -22,86 +22,50 @@
         app:cardCornerRadius="4dp"
         android:layout_margin="0dp">
 
-
-
-        <LinearLayout
-            android:layout_width="431dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <!--<ImageView-->
-            <!--android:layout_width="260dp"-->
-            <!--android:layout_height="150dp"-->
-
-            <!--android:src="@drawable/apple"-->
-            <!--android:scaleType="fitXY"-->
-            <!--android:id="@+id/iv"-->
-            <!--/>-->
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/r1">
 
-                <FrameLayout
-                    android:layout_width="151dp"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/iv"
-                        android:layout_width="151dp"
-                        android:layout_height="match_parent"
-                        android:padding="2dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/dzire" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="101dp"
-                        android:scaleType="fitXY"
-                        android:id="@+id/car"
-                        android:src="@drawable/frame"
-                        app:srcCompat="@drawable/dzire" />
-
-                </FrameLayout>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="101dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/car"
+                    android:src="@drawable/frame"
+                    app:srcCompat="@drawable/dzire" />
 
                 <TextView
                     android:id="@+id/price1"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="200sp"
-                    android:layout_marginBottom="31dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/car"
                     android:background="@color/active_light"
                     android:text="inclusive of GST"
                     android:textColor="@color/active_dark" />
 
                 <TextView
                     android:id="@+id/price2"
-                    android:layout_width="113dp"
-                    android:layout_height="38dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginLeft="200sp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="107dp"
-                    android:layout_marginRight="107dp"
-                    android:layout_marginBottom="51dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@id/price1"
+                    android:layout_toRightOf="@id/car"
                     android:background="@color/active_light"
-                    android:text="33931/-"
+                    android:text="Rs. 33000/-"
                     android:textColor="@color/active_dark" />
 
 
                 <Button
+                    android:id="@+id/bookButton"
                     android:layout_width="129dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginStart="52dp"
-                    android:layout_marginLeft="52dp"
-                    android:layout_marginTop="50sp"
-                    android:layout_marginEnd="98dp"
-                    android:layout_marginRight="98dp"
-                    android:layout_marginBottom="-722dp"
+                    android:layout_below="@id/price2"
+                    android:layout_toRightOf="@id/car"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@color/light_green_900"
                     android:shadowColor="@color/cyan_A400"
                     android:text="BOOK"
@@ -109,145 +73,143 @@
                     android:textSize="24sp" />
 
 
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/car">
+
+                    <TextView
+                        android:id="@+id/cabName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="D'zire"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#000"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        app:autoSizeTextType="none" />
+
+                    <TextView
+                        android:id="@+id/cabName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="or Similar*"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        app:autoSizeTextType="none" />
+
+                    <TextView
+                        android:id="@+id/rat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:text="4.5" />
+
+                    <TextView
+                        android:id="@+id/rat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/5 *" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_below="@id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/seatim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/seat" />
+
+                    <ImageView
+                        android:id="@+id/bagim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/bag" />
+
+                    <ImageView
+                        android:id="@+id/acim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ac" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_below="@id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/seattext"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="4 Seater" />
+
+                    <TextView
+                        android:id="@+id/bagtext"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="2 Luggage" />
+
+                    <TextView
+                        android:id="@+id/actext"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Air Condition" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_below="@id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/notetext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="NOTE : "
+                        android:textColor="@color/red_900"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/notetext2"
+                        android:layout_width="142dp"
+                        android:layout_height="match_parent"
+                        android:text="Extra charge 10/km"
+                        android:textColor="@color/active_dark" />
+                </LinearLayout>
+
             </RelativeLayout>
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/cabName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="45dp"
-                    android:text="D'zire"
-                    android:layout_below="@+id/r1"
-                    android:textColor="#000"
-                    android:textSize="24sp"
-                    android:gravity="center"
-                    app:autoSizeTextType="none" />
-
-                <TextView
-                    android:id="@+id/cabName1"
-                    android:layout_width="97dp"
-                    android:layout_height="45dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginLeft="67sp"
-                    android:layout_marginEnd="271dp"
-                    android:layout_below="@+id/car"
-                    android:layout_marginRight="271dp"
-                    android:gravity=""
-                    android:text="or Similar*"
-                    android:textColor="#000"
-                    android:textSize="14sp"
-                    app:autoSizeTextType="none" />
-
-                <TextView
-                    android:id="@+id/rat1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="3dp"
-                    android:layout_marginRight="3dp"
-                    android:layout_toStartOf="@+id/rat2"
-                    android:layout_toLeftOf="@+id/rat2"
-                    android:text="4.5" />
-
-                <TextView
-                    android:id="@+id/rat2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginEnd="48dp"
-                    android:layout_marginRight="48dp"
-                    android:text="/5 *" />
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
 
-                <ImageView
-                    android:id="@+id/seatim"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/seat" />
-
-                <ImageView
-                    android:id="@+id/bagim"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/bag" />
-
-                <ImageView
-                    android:id="@+id/acim"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5sp"
-                    android:layout_weight="1"
-                    android:src="@drawable/ac" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/seattext"
-                    android:layout_width="158dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="4 Seater" />
-
-                <TextView
-                    android:id="@+id/bagtext"
-                    android:layout_width="158dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="2 Luggage" />
-
-                <TextView
-                    android:id="@+id/actext"
-                    android:layout_width="158dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10sp"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Air Condition" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/notetext1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="NOTE : "
-                    android:textColor="@color/red_900"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/notetext2"
-                    android:layout_width="142dp"
-                    android:layout_height="match_parent"
-                    android:text="Extra charge 10/km"
-                    android:textColor="@color/active_dark" />
-            </LinearLayout>
-
-        </LinearLayout>
 
 
     </android.support.v7.widget.CardView>
