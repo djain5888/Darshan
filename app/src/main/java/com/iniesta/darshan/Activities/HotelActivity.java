@@ -230,10 +230,16 @@ public class HotelActivity extends AppCompatActivity {
         checkOutString = checkOutDate.getText().toString();
         reasonString = reason.getText().toString();
 
+        Bundle bundle = new Bundle();
+        bundle.putString("hotel",hotelString);
+        bundle.putString("checkIn",checkInString);
+        bundle.putString("checkOut",checkOutString);
+
         Toast.makeText(this,"Submit clicked\nHotel: " + hotelString + " CheckIn: " + checkInString
                 + " CheckOut: " + checkOutString + "Rooms: " + rooms + " Persons: " + persons,Toast.LENGTH_LONG).show();
 
         Intent hotelIntent = new Intent(HotelActivity.this,HotelResultsActivity.class);
+        hotelIntent.putExtra("bundle",bundle);
         startActivity(hotelIntent);
     }
 
