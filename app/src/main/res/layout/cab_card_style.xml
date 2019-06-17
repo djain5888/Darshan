@@ -63,7 +63,8 @@
                 </FrameLayout>
 
                 <TextView
-                    android:layout_width="137dp"
+                    android:id="@+id/price1"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="200sp"
                     android:layout_marginBottom="31dp"
@@ -72,17 +73,18 @@
                     android:textColor="@color/active_dark" />
 
                 <TextView
-                    android:layout_width="127dp"
-                    android:layout_height="45dp"
+                    android:id="@+id/price2"
+                    android:layout_width="113dp"
+                    android:layout_height="38dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_marginLeft="200sp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginEnd="87dp"
-                    android:layout_marginRight="87dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="107dp"
+                    android:layout_marginRight="107dp"
                     android:layout_marginBottom="51dp"
                     android:background="@color/active_light"
-                    android:text="inclusive of GST"
+                    android:text="33931/-"
                     android:textColor="@color/active_dark" />
 
 
