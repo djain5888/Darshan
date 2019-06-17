@@ -232,6 +232,9 @@ public class HotelActivity extends AppCompatActivity {
 
         Toast.makeText(this,"Submit clicked\nHotel: " + hotelString + " CheckIn: " + checkInString
                 + " CheckOut: " + checkOutString + "Rooms: " + rooms + " Persons: " + persons,Toast.LENGTH_LONG).show();
+
+        Intent hotelIntent = new Intent(HotelActivity.this,HotelResultsActivity.class);
+        startActivity(hotelIntent);
     }
 
 }
