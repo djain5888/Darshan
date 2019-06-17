@@ -170,14 +170,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/seat" />
+                    android:src="@drawable/seat" />
 
                 <ImageView
                     android:id="@+id/bagim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/bag" />
+                    android:src="@drawable/bag" />
 
                 <ImageView
                     android:id="@+id/acim"
@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5sp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/ac" />
+                    android:src="@drawable/ac" />
 
             </LinearLayout>
 
