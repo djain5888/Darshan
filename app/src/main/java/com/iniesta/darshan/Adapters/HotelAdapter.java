@@ -44,6 +44,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
         hotelViewHolder.hotelAddress.setText(hotelList.get(i).getAddress());
         hotelViewHolder.priceTextView.setText(Integer.toString(hotelList.get(i).getPrice()));
         hotelViewHolder.ratingTextView.setText(Double.toString(hotelList.get(i).getRating()));
+        hotelViewHolder.sizeTextView.setText(hotelList.get(i).getRoomSize());
     }
 
     @Override
@@ -62,6 +63,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
         TextView hotelAddress;
         TextView priceTextView;
         TextView ratingTextView;
+        TextView sizeTextView;
 
         private HotelAdapter.RecyclerViewClickListener listener;
         public HotelViewHolder(View itemView, HotelAdapter.RecyclerViewClickListener listener2) {
@@ -73,6 +75,8 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
             hotelAddress = itemView.findViewById(R.id.desc);
             priceTextView = itemView.findViewById(R.id.price);
             ratingTextView = itemView.findViewById(R.id.rating);
+            sizeTextView = itemView.findViewById(R.id.sizeText);
+            itemView.setOnClickListener(this);
         }
 
         @Override
