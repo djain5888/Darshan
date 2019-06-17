@@ -10,15 +10,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.iniesta.darshan.R;
-import com.iniesta.darshan.models.poojamodel;
+import com.iniesta.darshan.models.CabModel;
+
 
 import java.util.ArrayList;
 
 public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
     private CabAdapter.RecyclerViewClickListener listen;
     private LayoutInflater inflater;
-    private ArrayList<poojamodel> imageModelArrayList;
-    public CabAdapter(Context ctx, ArrayList<poojamodel> imageModelArrayList, CabAdapter.RecyclerViewClickListener listener){
+    private ArrayList<CabModel> imageModelArrayList;
+    public CabAdapter(Context ctx, ArrayList<CabModel> imageModelArrayList, CabAdapter.RecyclerViewClickListener listener){
         listen=listener;
         inflater = LayoutInflater.from(ctx);
         this.imageModelArrayList = imageModelArrayList;
@@ -31,7 +32,7 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
     @Override
     public CabAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = inflater.inflate(R.layout.recycler_item, parent, false);
+        View view = inflater.inflate(R.layout.cab_card_style, parent, false);
         CabAdapter.MyViewHolder holder = new CabAdapter.MyViewHolder(view,listen);
 
 
@@ -42,8 +43,20 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
     public void onBindViewHolder(CabAdapter.MyViewHolder holder, int position) {
 
         holder.iv.setImageResource(imageModelArrayList.get(position).getImage_drawable());
-        holder.time.setText(imageModelArrayList.get(position).getName());
-        holder.time2.setText(imageModelArrayList.get(position).getName1());
+        holder.cabname.setText(imageModelArrayList.get(position).getName());
+        holder.seater.setText(imageModelArrayList.get(position).getSeater()+"seater");
+        holder.rating.setText(Integer.toString(imageModelArrayList.get(position).getRating()));
+        holder.price.setText("Rs"+imageModelArrayList.get(position).getprice());
+        holder.luggage.setText(imageModelArrayList.get(position).getLuggage()+"luggage");
+        if(imageModelArrayList.get(position).getAc()==true)
+        {
+            holder.ac.setVisibility(View.VISIBLE);
+            holder.ac1.setVisibility(View.VISIBLE);
+        }
+        else {
+            holder.ac1.setVisibility(View.INVISIBLE);
+            holder.ac.setVisibility(View.INVISIBLE);
+        }
     }
 
     @Override
@@ -57,16 +70,22 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        TextView time,time2;
-        ImageView iv;
+        TextView cabname,luggage,seater,price,ac,rating;
+        ImageView iv,ac1;
         private CabAdapter.RecyclerViewClickListener listener;
         public MyViewHolder(View itemView, CabAdapter.RecyclerViewClickListener listener2) {
             super(itemView);
 
             listener = listener2;
-            time = (TextView) itemView.findViewById(R.id.tv);
-            time2 = (TextView) itemView.findViewById(R.id.tv2);
-            iv = (ImageView) itemView.findViewById(R.id.iv);
+            cabname = (TextView) itemView.findViewById(R.id.cabName);
+            seater = (TextView) itemView.findViewById(R.id.seattext);
+            iv = (ImageView) itemView.findViewById(R.id.car);
+            luggage=(TextView)itemView.findViewById(R.id.bagtext);
+            price=(TextView)itemView.findViewById(R.id.price2);
+            rating=(TextView)itemView.findViewById(R.id.rat1);
+            ac1=(ImageView)itemView.findViewById(R.id.acim);
+            ac=(TextView)itemView.findViewById(R.id.actext);
+
             itemView.setOnClickListener(this);
         }
 

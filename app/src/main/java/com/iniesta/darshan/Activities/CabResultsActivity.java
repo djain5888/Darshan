@@ -16,12 +16,13 @@ import com.iniesta.darshan.Adapters.CabAdapter;
 
 import com.iniesta.darshan.Adapters.poojaAdapter;
 import com.iniesta.darshan.R;
+import com.iniesta.darshan.models.CabModel;
 import com.iniesta.darshan.models.poojamodel;
 
 import java.util.ArrayList;
 
 public class CabResultsActivity extends AppCompatActivity {
-    private ArrayList<poojamodel> row2;
+    private ArrayList<CabModel> row2;
     private CabAdapter adapter1;
     private RecyclerView cabrecyclerView;
     final Context context = this;
@@ -31,7 +32,7 @@ public class CabResultsActivity extends AppCompatActivity {
     TextView checkInTextView;
     TextView checkOutTextView;
     private Button dialogButton;
-    private String[] NameListrow2 = new String[]{"Shree Ram Mandir", "Vrindavan", "Mata Mansa Devi", "Kashi Vishwanath"};
+    private String[] CARNAME= new String[]{"hondA","CIVIC","SWIFT","BALENO"};
 
     private int[] myImageListrow2 = new int[]{
             R.drawable.haridwar,
@@ -40,6 +41,13 @@ public class CabResultsActivity extends AppCompatActivity {
             R.drawable.varansi1,
 
     };
+    private int[] PRICE = new int[]{2000,3222,1234,5432};
+    private int[] rating=new int[]{5,4,2,1};
+    private int[] seater=new int[]{2,3,4,5};
+    private int[] luggage=new int[]{1,2,3,4};
+    private boolean[] ac=new boolean[]{true,false,true,false};
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -165,18 +173,22 @@ public class CabResultsActivity extends AppCompatActivity {
         Intent intent = new Intent(CabResultsActivity.this,CabActivity.class);
         startActivity(intent);
     }
-        private ArrayList<poojamodel> eatFruits ( int a){
+        private ArrayList<CabModel> eatFruits ( int a){
 
-            ArrayList<poojamodel> list = new ArrayList<>();
+            ArrayList<CabModel> list = new ArrayList<>();
 
 
             if (a == 1) {
                 for (int i = 0; i < 4; i++) {
-                    poojamodel poojaModel = new poojamodel();
-                    poojaModel.setName(NameListrow2[i]);
-                    poojaModel.setName1(NameListrow2[i]);
-                    poojaModel.setImage_drawable(myImageListrow2[i]);
-                    list.add(poojaModel);
+                    CabModel cabModel = new CabModel();
+                    cabModel.setName(CARNAME[i]);
+                    cabModel.setLuggage(luggage[i]);
+                    cabModel.setPrice(PRICE[i]);
+                    cabModel.setRating(rating[i]);
+                    cabModel.setAc(ac[i]);
+                    cabModel.setSeater(seater[i]);
+                    cabModel.setImage_drawable(myImageListrow2[i]);
+                    list.add(cabModel);
                 }
             }
             return list;
