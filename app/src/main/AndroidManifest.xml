@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.HotelResultsActivity"></activity>
-        <activity android:name=".Activities.HotelActivity" />
+        <activity android:name=".Activities.HotelActivity"></activity>
         <activity android:name=".Activities.CabActivity" />
         <activity android:name=".Activities.LoginActivity" />
-        <activity android:name=".Activities.SignInActivity" />
-        <activity android:name=".Activities.PoojaActivity" />
+        <activity android:name=".Activities.SignInActivity"/>
+        <activity android:name=".Activities.PoojaActivity"/>
+        <activity android:name=".Activities.CabResultsActivity"/>
         <activity
             android:name=".Activities.HelpActivity"
             android:label="@string/title_activity_help" />
