@@ -23,17 +23,17 @@ public class HotelResultsActivity extends AppCompatActivity {
         checkInTextView = findViewById(R.id.checkInText);
         checkOutTextView = findViewById(R.id.checkOutText);
 
-        Bundle b = getIntent().getBundleExtra("bundle");
-        if (b!=null) {
-            String place = b.getString("hotel");
-            String checkIn = b.getString("checkIn");
-            String checkOut = b.getString("checkOut");
+            Bundle b = getIntent().getBundleExtra("bundle");
+            if (b!=null) {
+                String place = b.getString("hotel");
+                String checkIn = b.getString("checkIn");
+                String checkOut = b.getString("checkOut");
 
-            if (!place.equals("") && !checkIn.equals("") && !checkOut.equals("") ) {
-                placeTextView.setText(place);
-                checkInTextView.setText(checkIn);
-                checkOutTextView.setText(checkOut);
-            }
+                if (!place.equals("") && !checkIn.equals("") && !checkOut.equals("") ) {
+                    placeTextView.setText(place);
+                    checkInTextView.setText(checkIn);
+                    checkOutTextView.setText(checkOut);
+                }
         }
 
     }

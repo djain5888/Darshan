@@ -54,7 +54,7 @@ public class CabActivity extends AppCompatActivity {
         places = findViewById(R.id.card_view1Cab);
         pooja = findViewById(R.id.card_view2Cab);
         packages = findViewById(R.id.card_view3Cab);
-        hotel = findViewById(R.id.card_view5Cab);
+        hotel = findViewById(R.id.card_view4Cab);
 
         places.setOnClickListener(new View.OnClickListener() {
             @Override
