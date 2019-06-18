@@ -55,10 +55,12 @@
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
+                                android:textSize="12sp"
                                 android:text="Booking Type"/>
 
                             <TextView
                                 android:id="@+id/typeText"
+                                android:textSize="12sp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Outstation"/>
@@ -94,11 +96,13 @@
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
+                                android:textSize="12sp"
                                 android:text="Booking Date"/>
 
                             <TextView
                                 android:id="@+id/bookingDateText"
                                 android:layout_width="match_parent"
+                                android:textSize="12sp"
                                 android:layout_height="wrap_content"
                                 android:text="23/06/2019"/>
 
@@ -130,6 +134,7 @@
 
                             <TextView
                                 android:layout_width="match_parent"
+                                android:textSize="12sp"
                                 android:layout_height="wrap_content"
                                 android:text="Duration"
                                 android:textColor="@color/black"
@@ -137,6 +142,7 @@
 
                             <TextView
                                 android:id="@+id/durationText"
+                                android:textSize="12sp"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="23 Hours"/>
