@@ -32,13 +32,13 @@ public class CabResultsActivity extends AppCompatActivity {
     TextView bookingDateTextView;
     TextView durationTextView;
     private Button dialogButton;
-    private String[] CARNAME= new String[]{"hondA","CIVIC","SWIFT","BALENO"};
+    private String[] CARNAME= new String[]{"XYLO","INDICA","INDIGO","DSIRE"};
 
     private int[] myImageListrow2 = new int[]{
-            R.drawable.haridwar,
-            R.drawable.mathura,
-            R.drawable.vrindawan,
-            R.drawable.varansi1,
+            R.drawable.xylo,
+            R.drawable.indica,
+            R.drawable.indigo,
+            R.drawable.dsire,
 
     };
     private int[] PRICE = new int[]{2000,3222,1234,5432};
