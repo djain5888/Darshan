@@ -38,7 +38,7 @@
                 <ImageView
                     android:id="@+id/rimg"
                     android:layout_width="71dp"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="20dp"
                     android:layout_height="17dp"
                     android:scaleType="fitEnd"
 
@@ -52,7 +52,7 @@
                     android:id="@+id/price2"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="20dp"
                    android:layout_marginRight="5dp"
                     android:layout_toRightOf="@id/rimg"
                     android:background="@color/active_light"
@@ -82,7 +82,7 @@
                     android:layout_height="29dp"
                     android:layout_below="@id/price1"
                     android:layout_marginLeft="60dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="2dp"
                     android:layout_toRightOf="@id/car"
                     android:background="@color/light_green_900"
                     android:shadowColor="@color/cyan_A400"
