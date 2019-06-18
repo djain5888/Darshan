@@ -77,15 +77,15 @@ public class HotelResultsActivity extends AppCompatActivity {
         hotelList.add(new HotelModel(R.drawable.varansi1,"Gargee Grand","Exhibition Road, Patna",
                 3100,4.2,"450X500",true,true,true));
         hotelList.add(new HotelModel(R.drawable.varansi1,"Gargee Grand","Exhibition Road, Patna",
-                3100,4.2,"450X500",true,true,true));
+                3100,4.2,"450X500",true,true,false));
         hotelList.add(new HotelModel(R.drawable.varansi1,"Gargee Grand","Exhibition Road, Patna",
-                3100,4.2,"450X500",true,true,true));
+                3100,4.2,"450X500",true,false,true));
         hotelList.add(new HotelModel(R.drawable.varansi1,"Gargee Grand","Exhibition Road, Patna",
-                3100,4.2,"450X500",true,true,true));
+                3100,4.2,"450X500",false,true,true));
         hotelList.add(new HotelModel(R.drawable.varansi1,"Gargee Grand","Exhibition Road, Patna",
-                3100,4.2,"450X500",true,true,true));
+                3100,4.2,"450X500",true,false,false));
         hotelList.add(new HotelModel(R.drawable.varansi1,"Gargee Grand","Exhibition Road, Patna",
-                3100,4.2,"450X500",true,true,true));
+                3100,4.2,"450X500",false,false,false));
     }
 
 }

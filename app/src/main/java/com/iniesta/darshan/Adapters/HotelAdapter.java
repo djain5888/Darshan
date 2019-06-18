@@ -45,6 +45,21 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
         hotelViewHolder.priceTextView.setText(Integer.toString(hotelList.get(i).getPrice()));
         hotelViewHolder.ratingTextView.setText(Double.toString(hotelList.get(i).getRating()));
         hotelViewHolder.sizeTextView.setText(hotelList.get(i).getRoomSize());
+
+        if (!hotelList.get(i).hasTv()){
+            hotelViewHolder.tvImageView.setVisibility(View.GONE);
+            hotelViewHolder.tvTextView.setVisibility(View.GONE);
+        }
+
+        if (!hotelList.get(i).hasSofa()){
+            hotelViewHolder.sofaImageView.setVisibility(View.GONE);
+            hotelViewHolder.sofaTextView.setVisibility(View.GONE);
+        }
+
+        if (!hotelList.get(i).hasAc()){
+            hotelViewHolder.acImageView.setVisibility(View.GONE);
+            hotelViewHolder.acTextView.setVisibility(View.GONE);
+        }
     }
 
     @Override
@@ -59,11 +74,18 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
     class HotelViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         ImageView mainImageView;
+        ImageView tvImageView;
+        ImageView sofaImageView;
+        ImageView acImageView;
         TextView hotelName;
         TextView hotelAddress;
         TextView priceTextView;
         TextView ratingTextView;
         TextView sizeTextView;
+        TextView tvTextView;
+        TextView sofaTextView;
+        TextView acTextView;
+
 
         private HotelAdapter.RecyclerViewClickListener listener;
         public HotelViewHolder(View itemView, HotelAdapter.RecyclerViewClickListener listener2) {
@@ -76,6 +98,12 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
             priceTextView = itemView.findViewById(R.id.price);
             ratingTextView = itemView.findViewById(R.id.rating);
             sizeTextView = itemView.findViewById(R.id.sizeText);
+            tvImageView = itemView.findViewById(R.id.tvImage);
+            sofaImageView = itemView.findViewById(R.id.sofaImage);
+            acImageView = itemView.findViewById(R.id.acImage);
+            tvTextView = itemView.findViewById(R.id.tvTextView);
+            sofaTextView = itemView.findViewById(R.id.sofaTextView);
+            acTextView = itemView.findViewById(R.id.acTextView);
             itemView.setOnClickListener(this);
         }
 

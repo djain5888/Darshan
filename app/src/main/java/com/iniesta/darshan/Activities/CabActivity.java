@@ -261,7 +261,9 @@ public class CabActivity extends AppCompatActivity {
 
         s1=autoCompleteTextView2.getText().toString();
         String s2=eText.getText().toString();
+        String dateString = date.getText().toString();
         Intent i1=new Intent(CabActivity.this,CabResultsActivity.class);
+        i1.putExtra("departure",dateString);
         startActivity(i1);
 
 //        Toast.makeText(this, "you entered "+s1, Toast.LENGTH_SHORT).show();
