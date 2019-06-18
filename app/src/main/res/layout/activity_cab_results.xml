@@ -16,7 +16,8 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/mainCardCab"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="5dp"
                 android:layout_margin="5dp">
@@ -25,6 +26,7 @@
                     android:id="@+id/linearHorizontalCab"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -150,145 +152,6 @@
 
 
             </android.support.v7.widget.CardView>
-
-
-            <!--<android.support.v7.widget.CardView-->
-                <!--android:id="@+id/mainCard"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--app:cardElevation="10dp"-->
-                <!--app:cardCornerRadius="5dp"-->
-                <!--android:layout_margin="5dp">-->
-
-                <!--<LinearLayout-->
-                    <!--android:id="@+id/linearHorizontal"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:orientation="horizontal">-->
-
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="0dp"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:orientation="horizontal">-->
-
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_margin="5dp"-->
-                            <!--android:layout_gravity="center"-->
-                            <!--android:src="@drawable/ic_action_places"/>-->
-
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_margin="5dp"-->
-                            <!--android:gravity="center_horizontal"-->
-                            <!--android:layout_gravity="center"-->
-                            <!--android:orientation="vertical">-->
-
-                            <!--<TextView-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:textColor="@color/black"-->
-                                <!--android:textStyle="bold"-->
-                                <!--android:text="Place"/>-->
-
-                            <!--<TextView-->
-                                <!--android:id="@+id/placeText"-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:text="Goa"/>-->
-
-
-                        <!--</LinearLayout>-->
-
-
-                    <!--</LinearLayout>-->
-
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="0dp"-->
-                        <!--android:layout_weight="1.5"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:orientation="horizontal">-->
-
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_margin="5dp"-->
-                            <!--android:layout_gravity="center"-->
-                            <!--android:src="@drawable/ic_action_checkout"/>-->
-
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_margin="5dp"-->
-                            <!--android:layout_gravity="center"-->
-                            <!--android:orientation="vertical">-->
-
-                            <!--<TextView-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:textColor="@color/black"-->
-                                <!--android:textStyle="bold"-->
-                                <!--android:text="Check In"/>-->
-
-                            <!--<TextView-->
-                                <!--android:id="@+id/checkInText"-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:text="23 June, 2019"/>-->
-
-
-                        <!--</LinearLayout>-->
-
-
-                    <!--</LinearLayout>-->
-
-                    <!--<LinearLayout-->
-                        <!--android:layout_width="0dp"-->
-                        <!--android:layout_weight="1.5"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:orientation="horizontal">-->
-
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_margin="5dp"-->
-                            <!--android:layout_gravity="center"-->
-                            <!--android:src="@drawable/ic_action_checkout"/>-->
-
-                        <!--<LinearLayout-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:layout_margin="5dp"-->
-                            <!--android:layout_gravity="center"-->
-                            <!--android:orientation="vertical">-->
-
-                            <!--<TextView-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:text="Check Out"-->
-                                <!--android:textColor="@color/black"-->
-                                <!--android:textStyle="bold"/>-->
-
-                            <!--<TextView-->
-                                <!--android:id="@+id/checkOutText"-->
-                                <!--android:layout_width="wrap_content"-->
-                                <!--android:layout_height="wrap_content"-->
-                                <!--android:text="25 June, 2019"/>-->
-
-
-                        <!--</LinearLayout>-->
-
-
-                    <!--</LinearLayout>-->
-
-                <!--</LinearLayout>-->
-
-
-
-            <!--</android.support.v7.widget.CardView>-->
 
             <Button
                 android:id="@+id/modifyButton"
