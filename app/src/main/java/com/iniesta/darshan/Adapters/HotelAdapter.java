@@ -6,8 +6,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.iniesta.darshan.R;
 import com.iniesta.darshan.models.HotelModel;
@@ -45,6 +47,12 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
         hotelViewHolder.priceTextView.setText(Integer.toString(hotelList.get(i).getPrice()));
         hotelViewHolder.ratingTextView.setText(Double.toString(hotelList.get(i).getRating()));
         hotelViewHolder.sizeTextView.setText(hotelList.get(i).getRoomSize());
+        hotelViewHolder.bookNowButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(mContext,"Book Clicked",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         if (!hotelList.get(i).hasTv()){
             hotelViewHolder.tvImageView.setVisibility(View.GONE);
@@ -85,6 +93,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
         TextView tvTextView;
         TextView sofaTextView;
         TextView acTextView;
+        Button bookNowButton;
 
 
         private HotelAdapter.RecyclerViewClickListener listener;
@@ -104,6 +113,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
             tvTextView = itemView.findViewById(R.id.tvTextView);
             sofaTextView = itemView.findViewById(R.id.sofaTextView);
             acTextView = itemView.findViewById(R.id.acTextView);
+            bookNowButton = itemView.findViewById(R.id.bookNowButton);
             itemView.setOnClickListener(this);
         }
 
