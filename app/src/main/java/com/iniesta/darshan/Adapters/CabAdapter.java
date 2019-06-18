@@ -6,8 +6,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.iniesta.darshan.R;
 import com.iniesta.darshan.models.CabModel;
@@ -16,6 +18,7 @@ import com.iniesta.darshan.models.CabModel;
 import java.util.ArrayList;
 
 public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
+    public Context c1;
     private CabAdapter.RecyclerViewClickListener listen;
     private LayoutInflater inflater;
     private ArrayList<CabModel> imageModelArrayList;
@@ -23,6 +26,8 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
         listen=listener;
         inflater = LayoutInflater.from(ctx);
         this.imageModelArrayList = imageModelArrayList;
+        c1=ctx;
+
     }
 
 
@@ -40,7 +45,7 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(CabAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(CabAdapter.MyViewHolder holder, final int position) {
 
         holder.iv.setImageResource(imageModelArrayList.get(position).getImage_drawable());
         holder.cabname.setText(imageModelArrayList.get(position).getName());
@@ -57,6 +62,13 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
             holder.ac1.setVisibility(View.GONE);
             holder.ac.setVisibility(View.GONE);
         }
+        holder.b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String s=imageModelArrayList.get(position).getName();
+                Toast.makeText(c1 ,"booked "+s, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -72,11 +84,13 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
 
         TextView cabname,luggage,seater,price,ac,rating;
         ImageView iv,ac1;
+        Button b1;
         private CabAdapter.RecyclerViewClickListener listener;
         public MyViewHolder(View itemView, CabAdapter.RecyclerViewClickListener listener2) {
             super(itemView);
 
             listener = listener2;
+            b1=itemView.findViewById(R.id.bookButton);
             cabname = (TextView) itemView.findViewById(R.id.cabName);
             seater = (TextView) itemView.findViewById(R.id.seattext);
             iv = (ImageView) itemView.findViewById(R.id.car);

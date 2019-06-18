@@ -7,8 +7,6 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="5dp"
-        android:padding="5dp"
         tools:context=".Activities.CabResultsActivity">
 
         <RelativeLayout
@@ -16,17 +14,17 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/mainCard"
+                android:id="@+id/mainCardCab"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 app:cardElevation="10dp"
                 app:cardCornerRadius="5dp"
                 android:layout_margin="5dp">
 
                 <LinearLayout
-                    android:id="@+id/linearHorizontal"
+                    android:id="@+id/linearHorizontalCab"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -43,7 +41,7 @@
                             android:src="@drawable/ic_action_places"/>
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:gravity="center_horizontal"
@@ -51,17 +49,17 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
-                                android:text="Place"/>
+                                android:text="Booking Type"/>
 
                             <TextView
-                                android:id="@+id/placeText"
-                                android:layout_width="wrap_content"
+                                android:id="@+id/typeText"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Goa"/>
+                                android:text="Outstation"/>
 
 
                         </LinearLayout>
@@ -71,7 +69,7 @@
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_weight="1.5"
+                        android:layout_weight="1"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
@@ -83,24 +81,24 @@
                             android:src="@drawable/ic_action_checkout"/>
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_gravity="center"
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"
-                                android:text="Check In"/>
+                                android:text="Booking Date"/>
 
                             <TextView
-                                android:id="@+id/checkInText"
-                                android:layout_width="wrap_content"
+                                android:id="@+id/bookingDateText"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="23 June, 2019"/>
+                                android:text="23/06/2019"/>
 
 
                         </LinearLayout>
@@ -110,7 +108,7 @@
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_weight="1.5"
+                        android:layout_weight="1"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
@@ -122,24 +120,24 @@
                             android:src="@drawable/ic_action_checkout"/>
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_gravity="center"
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Check Out"
+                                android:text="Duration"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"/>
 
                             <TextView
-                                android:id="@+id/checkOutText"
-                                android:layout_width="wrap_content"
+                                android:id="@+id/durationText"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="25 June, 2019"/>
+                                android:text="23 Hours"/>
 
 
                         </LinearLayout>
@@ -153,11 +151,150 @@
 
             </android.support.v7.widget.CardView>
 
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/mainCard"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:cardElevation="10dp"-->
+                <!--app:cardCornerRadius="5dp"-->
+                <!--android:layout_margin="5dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearHorizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/ic_action_places"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:gravity="center_horizontal"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textColor="@color/black"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:text="Place"/>-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/placeText"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Goa"/>-->
+
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1.5"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/ic_action_checkout"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:textColor="@color/black"-->
+                                <!--android:textStyle="bold"-->
+                                <!--android:text="Check In"/>-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/checkInText"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="23 June, 2019"/>-->
+
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1.5"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:src="@drawable/ic_action_checkout"/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_margin="5dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="Check Out"-->
+                                <!--android:textColor="@color/black"-->
+                                <!--android:textStyle="bold"/>-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/checkOutText"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="25 June, 2019"/>-->
+
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
             <Button
                 android:id="@+id/modifyButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/mainCard"
+                android:layout_below="@id/mainCardCab"
                 android:background="@drawable/bubble"
                 android:backgroundTint="@color/red_500"
                 android:text="Modify"

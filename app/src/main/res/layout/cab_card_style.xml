@@ -82,7 +82,7 @@
                     android:layout_height="29dp"
                     android:layout_below="@id/price1"
                     android:layout_marginLeft="60dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="2dp"
                     android:layout_toRightOf="@id/car"
                     android:background="@color/light_green_900"
                     android:shadowColor="@color/cyan_A400"
@@ -126,27 +126,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="75dp"
-                        android:text="4.5"
-                        android:textColor="@color/grey_1000"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:text="4.5" />
 
                     <TextView
                         android:id="@+id/rat2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="/5" />
-
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="14dp"
-                        android:layout_below="@id/mainImage"
-                        android:layout_marginTop="19dp"
-                        android:scaleType="fitStart"
-                        android:layout_toLeftOf="@id/rat2"
-                        android:src="@drawable/ic_star" />
-
+                        android:text="/5 *" />
                 </LinearLayout>
 
                 <LinearLayout
