@@ -46,7 +46,7 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
         holder.cabname.setText(imageModelArrayList.get(position).getName());
         holder.seater.setText(imageModelArrayList.get(position).getSeater()+"seater");
         holder.rating.setText(Integer.toString(imageModelArrayList.get(position).getRating()));
-        holder.price.setText("Rs"+imageModelArrayList.get(position).getprice());
+        holder.price.setText(Integer.toString(imageModelArrayList.get(position).getprice()));
         holder.luggage.setText(imageModelArrayList.get(position).getLuggage()+"luggage");
         if(imageModelArrayList.get(position).getAc()==true)
         {
@@ -54,8 +54,8 @@ public class CabAdapter extends RecyclerView.Adapter<CabAdapter.MyViewHolder> {
             holder.ac1.setVisibility(View.VISIBLE);
         }
         else {
-            holder.ac1.setVisibility(View.INVISIBLE);
-            holder.ac.setVisibility(View.INVISIBLE);
+            holder.ac1.setVisibility(View.GONE);
+            holder.ac.setVisibility(View.GONE);
         }
     }
 
