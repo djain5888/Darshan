@@ -30,7 +30,7 @@
     <!-- Bottom Navigation Selector -->
     <color name="active_light">#FFFFFF</color>
     <color name="inactive_light">#83ffffff</color>
-    <color name="active_dark">#070707</color>
+    <color name="active_dark">#040404</color>
     <color name="inactive_dark">#8e151616</color>
 
     <!-- Color List -->
