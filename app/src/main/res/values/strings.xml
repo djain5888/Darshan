@@ -11,5 +11,43 @@
     <string name="title_activity_dash">DashActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_help">HelpActivity</string>
-
+    <string name="tour_guideText">A tour guide is a person who provides assistance, information on cultural, historical and contemporary heritage to people on organized tours and individual clients at educational establishments, religious and historical sites, museums, and at venues of other significant interest, attractions sites.</string>
+    <string name="travel_assistantText">Travel assistants advise clients on their destinations and make arrangements for transportation, accommodations, car rentals and tours. For travelers who are going abroad, agents will provide information on customs regulations and assist in obtaining the necessary documents.</string>
+    <string name="skills1">
+        1. Outstanding interpersonal and communication skills.\n
+        2. Passion for customer service.\n
+        3. High organizational skills.\n
+        4. Safety conscious.\n
+        5. High levels of initiative, resourcefulness, flexibility, patience, and compromise.\n
+        6. Must be able to work with people from different cultures, ages, and walks of life.
+    </string>
+    <string name="skills2">
+        1. Excellent communication.\n
+        2. Organizational skills.\n
+        3. Gather information from various sources and plan travel itineraries.\n
+        4. Selling travel packages.\n
+        5. Courtesy.\n
+        6. Having high attention to details.\n
+        7. Having good negotiation skills.\n
+        8. Having public relations skills.\n
+    </string>
+    <string name="responsibilities1">
+        1. Attending briefing meetings with the Tour Manager about important information.\n
+        2. Greeting tourists before starting the tour(e.g name, remembering face).\n
+        3. Explaining emergency procedures to the group.\n
+        4. Distributing promotional material about the trip to the tourists.\n
+        5. Providing information about the history and culture of the places they visit.\n
+        6. Managing groups of up to thirty people.\n
+        7. Driving vehicle or Swimming when necessary.\n
+        8. Making sure that the group adheres and follows local laws, regulations, or rules of specific destinations.\n
+        9. Assisting tourists with special needs like senior citizens, disabilities, and small babies.
+    </string>
+    <string name="responsibilities2">
+        1. Confirming Reservations.\n
+        2. Managing Tour Finances.\n
+        3. Getting everyone to where they need to be on time.\n
+        4. Having high attention to details.\n
+        5. Having good negotiation skills.\n
+        6. Having public relations skills.
+    </string>
 </resources>

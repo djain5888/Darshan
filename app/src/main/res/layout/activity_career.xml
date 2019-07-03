@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activities.CareerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_margin="5dp"
+            android:text="Careers"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/careersImg"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/careers"
+            android:layout_below="@id/headingText"
+            android:scaleType="fitXY"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tourguideCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_below="@id/careersImg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tourguide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tour Guide"
+                    android:textSize="26sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tourguide"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:text="@string/tour_guideText"/>
+
+                <TextView
+                    android:id="@+id/guideSkills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Required Skills and Qualifications"
+                    android:layout_below="@id/text1"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/guideSkills"
+                    android:textSize="18sp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="@string/skills1"/>
+
+                <TextView
+                    android:id="@+id/guideResponsibilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary Responsibilities"
+                    android:layout_below="@id/text2"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/guideResponsibilities"
+                    android:gravity="start"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:text="@string/responsibilities1"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/travelAssistantCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_below="@id/tourguideCard">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/travelAssistant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel Assistant"
+                    android:textSize="26sp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/text1assistant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/travelAssistant"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:text="@string/travel_assistantText"/>
+                <TextView
+                    android:id="@+id/assistantSkills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Required Skills and Qualifications"
+                    android:layout_below="@id/text1assistant"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/text2assistant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/assistantSkills"
+                    android:gravity="start"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:text="@string/skills2"/>
+
+                <TextView
+                    android:id="@+id/assistantResponsibilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary Responsibilities"
+                    android:layout_below="@id/text2assistant"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/text3assistant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/assistantResponsibilities"
+                    android:gravity="start"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:text="@string/responsibilities2"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/applyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travelAssistantCard"
+            android:text="Apply Now"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_red"
+            android:onClick="applyCareers"/>
+
+    </RelativeLayout>
+
+</ScrollView>
