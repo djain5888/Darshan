@@ -5,14 +5,17 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.iniesta.darshan.R;
 
 public class HelpActivity extends AppCompatActivity {
     private TextView mTextMessage;
-    BottomNavigationView navView;
+    private BottomNavigationView navView;
+    private CardView cardabout;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -51,6 +54,16 @@ public class HelpActivity extends AppCompatActivity {
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navView.getMenu().getItem(3).setChecked(true);
+
+        cardabout = findViewById(R.id.card1);
+        cardabout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(HelpActivity.this,AboutUsActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
