@@ -26,7 +26,7 @@
             android:id="@+id/careersImg"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/globe"
+            android:src="@drawable/careers"
             android:layout_below="@id/headingText"
             android:scaleType="fitXY"/>
 
