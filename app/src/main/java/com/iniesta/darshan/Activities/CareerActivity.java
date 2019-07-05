@@ -19,8 +19,8 @@ public class CareerActivity extends AppCompatActivity {
     }
 
     public void applyCareers(View view){
-        //Intent intent = new Intent(CareerActivity.this, Applynow.class);
-        //startActivity(intent);
-        Toast.makeText(this,"Button clicked",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(CareerActivity.this, Applynow.class);
+        startActivity(intent);
+        //Toast.makeText(this,"Button clicked",Toast.LENGTH_SHORT).show();
     }
 }

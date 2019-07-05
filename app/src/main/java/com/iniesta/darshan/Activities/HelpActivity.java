@@ -15,7 +15,7 @@ import com.iniesta.darshan.R;
 public class HelpActivity extends AppCompatActivity {
     private TextView mTextMessage;
     private BottomNavigationView navView;
-    private CardView cardabout;
+    private CardView cardabout,cardcon,cardcarrer;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -60,6 +60,24 @@ public class HelpActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(HelpActivity.this,AboutUsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardcarrer = findViewById(R.id.card3);
+        cardcarrer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(HelpActivity.this,CareerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardcon = findViewById(R.id.card2);
+        cardcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(HelpActivity.this,Contact_us.class);
                 startActivity(intent);
             }
         });

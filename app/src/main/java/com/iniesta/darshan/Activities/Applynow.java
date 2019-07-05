@@ -26,7 +26,7 @@ public class Applynow extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apply_now);
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
 
         submitButton = findViewById(R.id.submit_btn);

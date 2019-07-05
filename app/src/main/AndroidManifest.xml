@@ -12,11 +12,14 @@
         <activity android:name=".Activities.AboutUsActivity"></activity>
         <activity android:name=".Activities.HotelActivity" />
         <activity android:name=".Activities.CabActivity" />
+        <activity android:name=".Activities.Contact_us" />
         <activity android:name=".Activities.LoginActivity" />
         <activity android:name=".Activities.SignInActivity" />
         <activity android:name=".Activities.PoojaActivity" />
         <activity android:name=".Activities.CabResultsActivity" />
         <activity android:name=".Activities.HotelResultsActivity" />
+        <activity android:name=".Activities.CareerActivity" />
+        <activity android:name=".Activities.Applynow" />
         <activity
             android:name=".Activities.HelpActivity"
             android:label="@string/title_activity_help" />
